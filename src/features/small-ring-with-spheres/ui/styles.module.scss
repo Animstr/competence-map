@@ -1,0 +1,38 @@
+@use '../../../index.scss';
+
+.big {
+    @include index.on-circle($item-count: 10, $circle-size: 256px, $item-size: 27px);
+    border: 2px solid #ADADAD;
+    margin: 0 auto;
+    margin-top: 45px;
+    border-radius: 100%;
+    width: 256px;
+    height: 256px;
+}
+
+.outer {
+    background: #ADADAD;
+    border-radius: 100%;
+}
+
+.invisible_ring {
+    @include index.on-circle-text($item-count: 10, $width: 350px, $height:350px, $item-size: 90px);
+    margin: 30px auto;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    .text {
+        text-align: start;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 13px;
+        color: #3A3A3A;
+        width: 90px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
