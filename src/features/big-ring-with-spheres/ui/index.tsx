@@ -19,9 +19,11 @@ export const BigRingWithSpheres= () => {
     }
 
     const circles = skills.map((item, i) => {
-        
+        const click = () => {
+            
+        }
         return (
-            <Sphere key={i} theme={s.outer}/>
+            <Sphere key={i} theme={s.outer} active={s.active} click={click}/>
         )
     })  
 

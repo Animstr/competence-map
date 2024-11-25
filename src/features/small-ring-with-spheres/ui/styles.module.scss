@@ -13,6 +13,27 @@
 .outer {
     background: #ADADAD;
     border-radius: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.active {
+    transition: 0.5 all;
+    width: 34px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #00A372;
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        top: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 23px;
+        height: 23px;
+        background: #00A372;
+    }
 }
 
 .invisible_ring {

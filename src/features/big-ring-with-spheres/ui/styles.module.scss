@@ -12,7 +12,9 @@
 
 .outer {
     background: #FFD4AD;
-    border-radius: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .invisible_ring {
